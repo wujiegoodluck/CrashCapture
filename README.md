@@ -1,0 +1,5 @@
+# CrashCapture
+iOS 防崩溃机制
+
+app运行时候的crash自动的捕获并且进行修复，就是为了降低我们的APP的crash率，利用OC的动态特性，采用AOP（Aspect  Oriented  Programming）面向切面编程的设计思想，无痕植入，自动的实时捕获APP的崩溃的破坏因子，通过特定的技术手段去化解这些破坏因子，
+使APP持续的运转保驾护航，当然我们不可能强大到把所有类型的crash都处理掉，但是我们会对一些高频的crash进行一一的处理，我们的目的就是降低crash率
