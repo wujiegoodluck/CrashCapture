@@ -88,7 +88,7 @@
 
 @end
 
-@implementation NSTimer (Crash)
+@implementation NSTimer (Crash)//NSTimer对target的强引⽤导致的内存泄漏问题
 
 + (void)wo_enableTimerProtector {
     
