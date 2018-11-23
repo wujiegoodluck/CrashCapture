@@ -229,7 +229,7 @@ static void *NSObjectKVOProxyKey = &NSObjectKVOProxyKey;
     __weak typeof(self) wkself = self;
 
     if ([self.KVOProxy wo_addObserver:wkself KVOinfo:kvoInfo]) {
-        [self wo_addObserver:self.KVOProxy forKeyPath:keyPath options:options context:context];
+        [self wo_addObserver:observer forKeyPath:keyPath options:options context:context];
     }else {
         NSLog(@"KVO is more");
     }

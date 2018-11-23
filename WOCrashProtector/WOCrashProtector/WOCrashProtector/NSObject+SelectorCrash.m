@@ -14,17 +14,6 @@
 
 @implementation WOUnrecognizedSelectorSolveObject
 
-/**
- 在类方法下使用对象实例方法
- 
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored"-Wobjc-protocol-method-implementation"
-- (void)method {
- ...
- }
-#pragma clang diagnostic pop
-*/
-
 // 此方法可被重写也可不重写,不重写可用swizzle， ** 未重写该函数会导致无限循环！ **
 //- (id)forwardingTargetForSelector:(SEL)aSelector
 //{
